@@ -12,3 +12,4 @@ Guessing the right usage and parameters of most functions was not an easy task. 
  - https://github.com/alnicol/Realtek-2832U/blob/master/RadioLib/FmRadio.cs
  - http://www.mp3car.com/forum/mp3car-technical-software/software-software-development/152928-wanted-programmer-who-wants-to-play-with-dab-option/page10
     
+To use it, include `RTKFM.h` in your project and link against `libRTKFM.a`.

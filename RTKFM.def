@@ -1,0 +1,27 @@
+; C:\msys64\mingw32\bin\dlltool.exe -z RTKFM.def --export-all-symbol RTKFM.dll
+LIBRARY RTKFM.dll
+EXPORTS
+RTFM_CloseDevice
+RTFM_DebugCMD
+RTFM_GetPCMInfo
+RTFM_GetRDSCtr
+RTFM_GetRDSQuality
+RTFM_GetRDSSync
+RTFM_GetSignalLock
+RTFM_GetSignalQuality
+RTFM_GetSignalQualityCtr
+RTFM_GetTunerRange
+RTFM_OpenDevice
+RTFM_ScanNextProg
+RTFM_SetAudioSampleRate
+RTFM_SetDeemphasisTC
+RTFM_SetFrequency
+RTFM_SetPCMCallBack
+RTFM_SetRDSCallBack
+RTFM_SetRDSCtr
+RTFM_SetScanStopQuality
+RTFM_SetSignalQualityCtr
+RTFM_Start
+RTFM_StartRDS
+RTFM_Stop
+RTFM_StopRDS

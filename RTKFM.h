@@ -55,7 +55,7 @@ bool RTFM_SetScanStopQuality(uint8_t quality);
 bool RTFM_GetTunerRange(uint32_t &lowLimit, uint32_t &highLimit);
 
 /* Returns parameters of PCM stream that will be passed to PCMCallBack.
- * first parameter is 2 -> not so sure it represents number of channels
+ * channels (1 = mono, 2 = stereo)
  * samplerate is usually 48000
  * samplesize is 16 bits (integer) */
 bool RTFM_GetPCMInfo(uint8_t &channels, uint32_t &samplerate, uint8_t &samplesize);
@@ -76,6 +76,7 @@ bool RTFM_GetSignalQualityCtr(uint8_t &ctr);
  * 0x01: Soft Mute
  * 0x02: Mono/Stereo Blend
  * 0x04: Mono/Stereo Switch
+ * 0x08: High Cut Control (https://github.com/alnicol/Realtek-2832U/blob/master/RadioLib/RadioData.cs)
  * Default value is 0x0B (11), which means Soft Mute and M/S Blend are enabled */
 bool RTFM_SetSignalQualityCtr(uint8_t ctr);
 

@@ -77,16 +77,18 @@ bool RTFM_GetSignalQualityCtr(uint8_t &ctr);
  * 0x02: Mono/Stereo Blend
  * 0x04: Mono/Stereo Switch
  * 0x08: High Cut Control (https://github.com/alnicol/Realtek-2832U/blob/master/RadioLib/RadioData.cs)
- * Default value is 0x0B (11), which means Soft Mute and M/S Blend are enabled */
+ * Default value is 0x0B (11), which means High Cut, Soft Mute and M/S Blend are enabled */
 bool RTFM_SetSignalQualityCtr(uint8_t ctr);
 
 /* gets RDS signal sync - if RDS service exists */
 bool RTFM_GetRDSSync(bool &sync);
 
-/* gets RDS control register - don't know how to use */
+/* gets RDS control register */
 bool RTFM_GetRDSCtr(uint8_t &ctr);
 
-/* sets RDS control register - don't know how to use */
+/* sets RDS control register
+ * 0x01: Error Correction
+ * ctr >> 1: Threshold (https://github.com/alnicol/Realtek-2832U/blob/master/RadioLib/RadioData.cs) */
 bool RTFM_SetRDSCtr(uint8_t ctr);
 
 /* gets RDS signal quality (0..100) */
